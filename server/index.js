@@ -13,3 +13,11 @@ app.use(cors());
 app.listen(port, () => {
     console.log(`server is running successfully on Port: ${port}`);
 })
+
+
+// creation Endpoints  
+const testEndpoint = require('./EndPoints-Folder/forTestingEndpoint');
+
+
+// calling Endpoints  
+app.get('/test', testEndpoint);
